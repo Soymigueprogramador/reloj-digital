@@ -1,0 +1,55 @@
+/* una configuracion para el navegador */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* estilos del body */
+body {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+}
+
+/* estilos del contenedor */
+#contenedor {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+/* estilos del reloj */
+
+#reloj {
+    font-size: 10em;
+    color: #fff;
+    text-align: center; 
+}
+
+/* estilos la fecha */
+
+#fecha {
+    font-size: 5em;
+    color: #fff;
+    text-align: center; 
+}
+
+/* vamos hacer las @media para que se vea responsive */
+
+@media only screen and (max-width: 768px) {
+    #reloj {
+        font-size: 6em; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
+   
+#reloj {
+        font-size: 4em; 
+    }
+}
